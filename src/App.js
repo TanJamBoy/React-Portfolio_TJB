@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, HashRouter as Router } from "react-router-dom";
 import './App.css';
 import Main from "./pages/Main";
 import Projects from "./pages/Projects";
@@ -12,7 +12,7 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
-          <Route exact path="/projects">
+          <Route path="/projects">
             <Projects />
           </Route>
         </Switch>
